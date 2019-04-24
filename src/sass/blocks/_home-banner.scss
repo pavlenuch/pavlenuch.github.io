@@ -1,0 +1,80 @@
+.body-index{
+    .box-index-banner{
+        position: relative;
+        img{
+            width: 100%;
+            opacity: 0;
+        }
+        .index-banner-content{
+            width: 100%;
+            padding-left: 2%;
+            padding-right: 2%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 50%;
+            left: auto;
+        }
+        .right-arrow{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-right: 3px solid #ffffff;
+            transition: 0.3s;
+            &:hover{
+                cursor: pointer;
+                background-color: rgba(43, 43, 43, .7);
+            }
+           .icon-right{
+                font-size: 22px;
+                color: #ffffff;
+                line-height: 40px;
+                vertical-align: middle;
+                padding-left: 3px;
+            }
+        }
+        .left-arrow{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-right: 3px solid #ffffff;
+            transform: rotate(180deg);
+            transition: 0.3s;
+            &:hover{
+                cursor: pointer;
+                background-color: rgba(43, 43, 43, .7);
+            }
+           .icon-right{
+                font-size: 22px;
+                color: #ffffff;
+                line-height: 40px;
+                vertical-align: middle;
+                padding-left: 3px;
+            }
+        }
+        background-image: url(images/slider-01.jpg);
+        background-color: rgba(0, 0, 0, 0);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        visibility: inherit;
+        .text-typing{
+            width: 200px;
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 27px;
+            font-family: Raleway;
+            text-transform: uppercase;
+            white-space:nowrap;
+            overflow:hidden;
+            animation: type 1s steps(10, end);
+        }
+        @keyframes type{
+            from { width: 0; }
+        }
+    }
+}
+

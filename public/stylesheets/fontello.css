@@ -24,7 +24,7 @@
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
+  speak-as: none;
  
   display: inline-block;
   text-decoration: inherit;
@@ -96,3 +96,4 @@
 .icon-right-1:before { content: '\f178'; } /* '' */
 .icon-dribbble:before { content: '\f17d'; } /* '' */
 .icon-header:before { content: '\f1dc'; } /* '' */
+.icon-down-open:before { content: '\e800'; } /* '' */

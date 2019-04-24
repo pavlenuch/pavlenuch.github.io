@@ -22,6 +22,7 @@ header{
         }
         #first__level-menu-name{
             display: none;
+            font-family: 'Montserrat', sans-serif;
         }
         .logo {
             display: inline-block;
@@ -31,6 +32,7 @@ header{
             text-decoration: none;
             line-height: 99px;
             vertical-align: middle;
+            font-family: 'Montserrat', sans-serif;
             }
             .icon-search {
                 color: #fff;
@@ -55,12 +57,12 @@ header{
                 width: 300px;
                 height: 90px;
                 background-color: rgba(0, 0, 0, 0.85);
-                position: absolute;
+                position: fixed;
                 left: auto;
-                right: 0;
-                top: 100px;
+                right: -1px;
+                top: 101px;
                 content: '';
-                z-index: 20;
+                z-index: 2000;
             }
             .burger {
                 display: block;
@@ -115,10 +117,15 @@ header{
                     display: block;
                     font-family: 'Droid Serif', serif;
                     color: #fcf9f9;
-                    font-size: 14px;
+                    font-size: 12px;
                     font-style: italic;
                     text-decoration: none;
                     margin-bottom: 25px;
+                    transition: all 1s ease 0s;
+                    &:hover{
+                        color: #f89b1c;
+                        padding-left: 20px;
+                    }
                 }
             }
             #right-menu:checked ~ .burger-right-menu{
@@ -136,12 +143,15 @@ header{
                 margin-bottom: 10px;
             }
             .first__level-menu {
-                color: #fff;
-                display: block; 
-                line-height: 32px;
-                font-weight: bold;
-                font-size: 14px;
-                font-family: 'Montserrat', sans-serif;
+                a{
+                    color: #fff;
+                    display: block; 
+                    line-height: 32px;
+                    font-weight: bold;
+                    font-size: 14px;
+                    font-family: 'Montserrat', sans-serif;
+                }
+
                 .first__level-menu-icon {
                     display: block;
                     box-sizing: border-box;
@@ -179,6 +189,7 @@ header{
                         padding-left: 15px;
                         color: #fff;
                         font-size: 13px;
+                        font-family: 'Montserrat', sans-serif;
                         a {
                             font-weight: normal;
                             display: block;
@@ -217,16 +228,5 @@ header{
             display: block;
         }
     }
-    .fon-img{
-        background-image: url(images/slider-01.jpg);
-        background-color: rgba(0, 0, 0, 0);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top center;
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-        visibility: inherit;
-        z-index: 20;
-        }
+
     }
