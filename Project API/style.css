@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    background-color: #111111;
+}
+header{
+    height: 100px;
+    background-color: #747373;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h1{
+    color: #FFDD00;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+#search{
+    margin: 15px;
+    box-shadow: none;
+    padding: 8px 45px 8px 15px;
+    border-radius: 3px;
+    background-color: #444444;
+    border: 1px solid #FFDD00;
+    color: #e0dfdc;
+    font-size: 16px;
+}
+#button{
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Tahoma,verdana,sans-serif;
+    background-color: #C70016;
+    border: 1px solid #FFDD00;
+    color: #fff;
+    border-radius: 3px;
+}
+#result{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.card_movie{
+    width: 23%;
+    min-height: 250px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 3px;
+    padding-bottom: 15px;
+    margin: 20px 10px 0 10px;
+    border: 1px solid #747373;
+}
+.movie_img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.movie_year-genre{
+    color: #fff;
+    font-size: 15px;
+    margin: 10px 0;
+}
+.card-movie_title{
+    font-family: Tahoma,verdana,sans-serif; 
+    color: #e0dfdc;  
+    font-size: 15px;
+    text-shadow: 1px 1px #000;
+    width: 90%;
+    text-align: center;
+}
+.card-movie__btn{
+    background-color: #C70016;
+    border: 1px solid #404040;
+    outline: solid 1px #111;
+    display: block;
+    margin: 0 auto;
+}
+.card-movie__btn a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Tahoma,verdana,sans-serif;
+    display: block;
+    padding: 4px 7px;
+    margin: 0 auto;
+}
+.card-movie__btn:hover{
+    background-color: #70000c;
+
+}
+.card-span{
+    color: #A8A8A8;
+    margin-right: 3px;
+    margin-left: 10%;
+    font-size: 18px;
+    
+}
+.wrap-for_show-more{
+    position: relative;
+    margin-bottom: 15px;
+}
+#btn-show-more{
+    cursor: pointer;
+    font-family: Tahoma,verdana,sans-serif;
+    font-size: 18px;
+    background-color: #C70016;
+    border: 1px solid #404040;
+    outline: solid 1px #111;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    position: absolute;
+    bottom: -85px;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display: none;
+}
+#btn-show-more:hover{
+    background-color: #70000c;
+}
+
+
+#create_movie{
+    width: 96%;
+    color: #fff;
+    background-color: rgb(51, 51, 51);
+    border-radius: 3px;
+    padding-bottom: 15px;
+    margin: 25px auto 0;
+    border: 1px solid #747373;
+    display: none;
+}
+.create_movie_btn-close{
+    float: right;
+    margin: 7px 7px 0 0;
+    cursor: pointer;
+    width: 20px;
+}
+/* заголовок фильма */
+.create-movie_title{
+    font-size: 28px;
+    text-shadow: 1px 1px #000;
+    color: #c9c9c9;
+    text-align: center;
+}
+/* описание сюжета */
+.create_movie__text{
+    font-family: Tahoma,verdana,sans-serif;
+    color: #a8a8a8;
+    font-size: 18px;
+    font-weight: 100;
+    margin-right: 25px;
+}
+/* линия под описание сюжета */
+.line{
+    border-bottom: 1px solid #c9c9c9;
+    width: 63%;
+    height: 1px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+/* постер фильма */
+.create_movie__img{
+    width: 30%;
+    float: left;
+    margin: 0 25px 25px 25px;
+
+}
+/* очистка float: :left */
+.clearfix { clear: both; }
+
+/* наименование информации */
+.create_movie__span, .create_movie__elem-gen-act{
+    font-family: Tahoma,verdana,sans-serif;
+    color: #a8a8a8;
+    font-weight: bold;
+    font-size: 16px;
+}
+.create_movie__elem, .create_movie__span-gen-act{
+    color: #e0dfdc;
+    font-family: Tahoma, verdana, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+
+}
+.create_movie__wrap-img{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.create_movie__video{
+    position: relative;
+    padding-bottom: 35%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.create_movie__video iframe{
+    position: absolute;
+    top:0;
+    width: 95%;
+    height: 100%;
+    left:50%;
+    transform:translate(-50%);
+}
+.images-film{
+    width: 24%;
+    cursor: pointer;
+}
+#images-film_hover{
+    width: 70%;
+    position: absolute;
+    left:50%;
+    bottom: 90%;
+    transform:translate(-50%);
+    border: 5px solid #e0dfdc;
+}
+html {
+    scroll-behavior: smooth;
+    }
