@@ -150,10 +150,13 @@ function createCard(i){
             });
 
             // заголовок фильма
-            let newH3 = document.createElement('h3');
-            newH3.classList.add('create-movie_title');
-            newH3.innerHTML = search.original_title;
-            createDiv.appendChild(newH3);
+            if(search.original_title){
+                let newH3 = document.createElement('h3');
+                newH3.classList.add('create-movie_title');
+                newH3.innerHTML = search.original_title;
+                createDiv.appendChild(newH3);
+            }
+
 
             // постер фильма
             if(search.poster_path){
