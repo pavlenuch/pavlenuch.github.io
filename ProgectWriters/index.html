@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+    <meta charset='utf-8'>
+    <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js'></script>
+</head>
+<body>
+  <header>
+    <span id="reset_server">СБРОС</span>
+    <img src="img/typewriter.png" alt="Печатная машинка">
+    <h1>Выдающиеся писатели Беларуси</h1>
+    <img src="img/typewriter.png" alt="Печатная машинка">
+  </header>
+  <nav>
+    <a href="#" id="add_writer">Добавить писателя<img src="img/icons8-добавить-свойство-40.png" alt="Иконка добавить"></a>
+    <label for="filter">Сортировать по периоду:</label>
+      <select name="filter" id="filter"> 
+        <option value="blok_writer">все</option>
+        <option value="soviet">советский</option>
+        <option value="actual">современный</option>
+      </select>
+    
+    <span href="#" id="sort_name">по имени</span>
+    <!-- <span href="#" id="reset_sort_name">обратно</span> -->
+  </nav>
+    <div id="overlay_add_writer"></div>
+      <form onsubmit="return false" id="form_add_writer"  class="form-for-add-writer_null">
+        <img src="img/close.png" alt="close" id="img-close_form-for-add-writer">
+        <h3>Заполните все поля</h3>
+        <label> <span>Введите Ф.И.О. писателя:</span><br><input type="text" id="name"><br></label>
+        <label><span>Дата рождения:</span><br><input type="text" id="birthdate"><br></label>
+        <label><span>Дата смерти:</span><br><input type="text" id="death"><br></label>
+        <label><span>Место рождения:</span><br><input type="text" id="birthplace"><br></label>
+        <label><span>Направление деятельности:</span><br><input type="text" id="direction"><br></label>
+        <label><span>Жанр:</span><br><input type="text" id="genre"><br></label>
+        <label><span>Достижение:</span><br><input type="text" id="achievement"><br></label>
+        <label><span>Ссылка на фото писателя:</span><br><input type="text" id="photo"><br></label>
+        <p>Произведение автора:</p>
+        <label><span>Название:</span><br><input type="text" id="title"><br></label>
+        <label><span>Жанр:</span><br><input type="text" id="style"><br></label>
+        <label><span>Язык исполнения:</span><br><input type="text" id="language"><br></label>
+        <label><span>Первая публикация:</span><br><input type="text" id="publication"><br></label>
+        <label><span>Экранизация:</span><br><input type="text" id="screening"><br></label>
+        <label><span>Ссылка на фото книги:</span><br><input type="text" id="photo_book"><br></label>
+        <input type="submit" value="Добавить" id="get_writer" class="sbt_get-writer">
+      </form>
+      <div id="overlay_add_new_book_writer"></div>
+      <form action="#" class="form-for-new-book_null" id="form_new_book">
+        <img src="img/close.png" alt="close" id="img-close_form-for-new-book">
+        <p>Введите данные книги</p>
+        <label><span>Название:</span><br><input type="text" id="title"><br></label>
+        <label><span>Жанр:</span><br><input type="text" id="style"><br></label>
+        <label><span>Язык исполнения:</span><br><input type="text" id="language"><br></label>
+        <label><span>Первая публикация: </span><br><input type="text" id="publication"><br></label>
+        <label><span>Была ли экранизация:</span><br><input type="text" id="screening"><br></label>
+        <label><span>Ссылка на фото книги:</span><br><input type="text" id="photo_book"><br></label>
+        <input type="submit" value="Добавить" id="get_book">
+      </form>
+
+      <!-- редактирование карточки -->
+      <form action="#" id="form-create_id" class="create_form-writer_null" name="edit">
+        <img src="img/close.png" alt="close" id="img-close_form-create_id">
+        <h3>Внесите изменения</h3>
+        <label> <span>Ф.И.О. писателя:</span><br><input type="text" id="create_name" name='create_name'><br></label>
+        <label><span>Дата рождения:</span><br><input type="text" id="create_birthdate" name='create_birthdate'><br></label>
+        <label><span id="create_death-span">Дата смерти:</span><br><input type="text" id="create_death" name='create_death'><br></label>
+        <label><span>Место рождения:</span><br><input type="text" id="create_birthplace" name='create_birthplace'><br></label>
+        <label><span>Направление деятельности:</span><br><input type="text" id="create_direction" name='create_direction'><br></label>
+        <label><span>Жанр:</span><br><input type="text" id="create_genre" name='create_genre'><br></label>
+        <label><span>Достижение:</span><br><input type="text" id="create_achievement" name='create_achievement'><br></label>
+        <label><span>Ссылка на фото писателя:</span><br><input type="text" id="create_photo" name='create_photo'><br></label>
+        <input type="submit" value="Сохранить" id="create_get_writer" class="sbt_get-writer"  name='saveBtn'>
+      </form>
+      <!-- class="create_form-writer_null" -->
+
+</body>
+</html>
+
+
+
+<!-- 1. добавить уникальный id каждому писателю -->
+<!-- 2. use case -->
+
+
+<!-- https://ru.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself -->
+<!-- https://webpack.js.org/loaders/ -->

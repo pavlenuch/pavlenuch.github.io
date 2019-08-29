@@ -34,14 +34,15 @@ addEventListener('DOMContentLoaded', function() {
                 }  
                 count = 1;
                 let val = document.querySelector('input').value;
-                let addurl = '/search/movie?api_key=a920020b8a37e76c3fb84f76eaa7fba2&include_adult=false&query=' + val + '&page=1';
+                let addurl = '/search/movie?api_key=a920020b8a37e76c3fb84f76eaa7fba2&query=' + val + '&page=1';
                     
                 // формировани карточек из API
                 sendRequest(addurl, function() {
                     let search = JSON.parse(this.response);
                     resSearch = search.results;
+                    console.log(resSearch);
         
-                    // вплытие кнопки вывода следующей страницы по клику
+                    // вплытие кнопки вывода следующей страницы по клику + скролл
                     if(search.total_pages > 1){
                         document.getElementById('btn-show-more').style.display = 'block';
                         window.addEventListener('scroll', endlessScroll);
@@ -98,10 +99,12 @@ function createCard(i){
     div.classList.add('card_movie');
     document.getElementById('result').appendChild(div);
 
-    let h3 = document.createElement('h3');
-    h3.classList.add('card-movie_title');
-    h3.innerHTML = resSearch[i].title;
-    div.appendChild(h3);
+    if(resSearch[i].title){
+        let h3 = document.createElement('h3');
+        h3.classList.add('card-movie_title');
+        h3.innerHTML = resSearch[i].title;
+        div.appendChild(h3);
+    }
 
     if(resSearch[i].poster_path){
         let img = document.createElement('img');
@@ -110,10 +113,13 @@ function createCard(i){
         div.appendChild(img);
     }
 
-    let year = document.createElement('p');
-    year.classList.add('movie_year-genre');
-    year.innerHTML = "<span class='card-span'>Release year: </span>" + resSearch[i].release_date;
-    div.appendChild(year);
+    if(resSearch[i].release_date){
+        let year = document.createElement('p');
+        year.classList.add('movie_year-genre');
+        year.innerHTML = "<span class='card-span'>Release year: </span>" + resSearch[i].release_date;
+        div.appendChild(year);
+    }
+
 
     let btnCard = document.createElement('button');
     btnCard.classList.add('card-movie__btn');
@@ -134,6 +140,7 @@ function createCard(i){
         let addurl = '/movie/' + idElement + '?api_key=a920020b8a37e76c3fb84f76eaa7fba2&query=';
         sendRequest(addurl, function() {
             let search = JSON.parse(this.response);
+            // console.log(search);
 
             document.getElementById('create_movie').style.display = 'block';
 
@@ -166,47 +173,59 @@ function createCard(i){
                 createDiv.appendChild(img);
             }
             // описание сюжета
-            let text = document.createElement('p');
-            text.classList.add('create_movie__text');
-            text.innerHTML = search.overview;
-            createDiv.appendChild(text);
+            if(search.overview){
+                let text = document.createElement('p');
+                text.classList.add('create_movie__text');
+                text.innerHTML = search.overview;
+                createDiv.appendChild(text);
+            }
  
             // линия под описание сюжета
             let line = document.createElement('span');
             line.classList.add('line');
             createDiv.appendChild(line);
             // наименование информации + дата релиза
-            let date = document.createElement('p');
-            date.classList.add('create_movie__elem');
-            date.innerHTML = "<span class='create_movie__span'>Release date: </span>" + search.release_date;
-            createDiv.appendChild(date);
+            if(search.release_date){
+                let date = document.createElement('p');
+                date.classList.add('create_movie__elem');
+                date.innerHTML = "<span class='create_movie__span'>Release date: </span>" + search.release_date;
+                createDiv.appendChild(date);
+            }
 
             // Срана производитель
-            let country = crElement(search.production_countries[0].name, "Production country: ");
-            createDiv.appendChild(country);
+            if(search.production_countries != 0){
+                let country = crElement(search.production_countries[0].name, "Production country: ");
+                createDiv.appendChild(country);
+            }
 
             // перебор жанров
-            let genre = document.createElement('p');
-            genre.classList.add('create_movie__elem-gen-act');
-            let gen = search.genres;
-            let arr = [];
-            for(let j=0; j < gen.length; j++){
-                arr.push(gen[j].name);
+            if(search.genres != 0){
+                let genre = document.createElement('p');
+                genre.classList.add('create_movie__elem-gen-act');
+                let gen = search.genres;
+                let arr = [];
+                for(let j=0; j < gen.length; j++){
+                    arr.push(gen[j].name);
+                }
+                let newArr = arr.join(', ');
+                let genreSpan = document.createElement('span');
+                genreSpan.innerHTML = newArr;
+                genreSpan.classList.add('create_movie__span-gen-act');
+                genre.innerHTML = 'Genre: ';
+                genre.appendChild(genreSpan);
+                createDiv.appendChild(genre);
             }
-            let newArr = arr.join(', ');
-            let genreSpan = document.createElement('span');
-            genreSpan.innerHTML = newArr;
-            genreSpan.classList.add('create_movie__span-gen-act');
-            genre.innerHTML = 'Genre: ';
-            genre.appendChild(genreSpan);
-            createDiv.appendChild(genre);
             
             // бюджет фильма
-            let budget = crElement(search.budget, "Budget: ");
-            createDiv.appendChild(budget);
+            if(search.budget){
+                let budget = crElement(search.budget, "Budget: ");
+                createDiv.appendChild(budget);
+            }
             // длительность фильма
-            let runtime = crElement(search.runtime, "Runtime: ");
-            createDiv.appendChild(runtime);
+            if(search.runtime){
+                let runtime = crElement(search.runtime, "Runtime: ");
+                createDiv.appendChild(runtime);
+            }
 
             // перебор актеров (число 13, я так захотел)
             let credits = '/movie/' + idElement + '/credits?api_key=a920020b8a37e76c3fb84f76eaa7fba2&query=';
@@ -215,7 +234,7 @@ function createCard(i){
             sendRequest(credits, function() {
                 let getCredits = JSON.parse(this.response);
                 let act = getCredits.cast;
-                if(act){
+                if(act != 0){
                     let arrActor = [];
                     if(act.length >= 13){
                         for(let j=0; j < 13; j++){
@@ -250,7 +269,7 @@ function createCard(i){
             sendRequest(images, function() {
                 let getImages = JSON.parse(this.response);
                 let img = getImages.backdrops;
-                if(img){
+                if(img != 0){
                     if(img.length >= 4){
                         for(let i = 0; i < 4; i++){
                             let newImg = document.createElement('img');
@@ -331,19 +350,3 @@ function cleanCreateMovie(){
         element.removeChild(element.firstChild);
     }  
 }
-
-// addEventListener('DOMContentLoaded', function() {
-// //     var state = { 'page_id': 1, 'user_id': 5 };
-// // var title = 'Hello World';
-// // var url = 'hello-world.html';
-// //     document.getElementById('button').addEventListener('click', () => {
-// //         history.pushState(state, title, url);
-// //       });
-// // window.addEventListener("popstate", function(e) {
-// //     document.location + "\nstate: " + JSON.stringify(event.state);
-// // }, false)
-// // document.getElementById('back').addEventListener('click', () => {
-// //     window.history.back();
-// //   });
-
-// })
