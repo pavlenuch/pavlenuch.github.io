@@ -1,0 +1,70 @@
+body {
+  background: #fff;
+  height: 100vh;
+}
+.box-cases{
+  margin: 0 auto;
+  border: 1px solid #000000;
+  width: 500px;
+  min-height: 310px;
+  position: relative;
+
+}
+h2, h4{
+  text-align: center;
+  margin-top: 5px;
+}
+.box-cases_btn{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.block-task{
+  width: 100%;
+  min-height: 30px;
+  border-bottom: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.block-task > .check{
+  margin-left: 15px;
+}
+.block-task span{
+  width: 70%;
+  overflow-wrap: break-word;
+  padding: 5px 0 5px 0;
+
+}
+.block-task > button{
+  margin-right: 10px;
+}
+.wrap-tasks{
+  display: flex;
+  flex-flow: wrap;
+  border-top: 1px solid #000000;
+}
+
+.box-popup{
+  border: 1px solid #000000;
+  width: 65%;
+  display: none;
+  margin: 25px auto ;
+}
+.box-popup textarea{
+  width: 70%;
+  display: block;
+  min-height: 70px;
+  margin: 0 auto;
+}
+.color-green{
+  background-color: #00FA9A;
+}
+.btn-save{
+  margin: 15px 35px 15px 45px;
+  
+}
+.btn-cancel{
+  margin: 15px 0 15px 50px;
+}
