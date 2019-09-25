@@ -1,0 +1,97 @@
+.search{
+    width: 335px;
+    margin: 0 auto;
+    margin-top: 110px;
+    .search__elem_none{
+        display: none;
+    }
+    .search__input{
+        width: 335px;
+        height: 60px;
+        border: 0;
+        border-bottom: solid 0.3px #8ca0bf;
+        color: rgb(54, 68, 89);
+        padding-left: 52px;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.47px;
+        outline: none;
+        &:nth-child(1){
+            background: url(images/004-pin.png) no-repeat scroll 24px 18px;
+            background-color: #ffffff;
+
+        }
+        &:nth-child(2){
+            background: url(images/group.png) no-repeat scroll 18px 18px;
+            background-color: #ffffff;
+        }
+        &:nth-child(3){
+            background: url(images/002-bed.png) no-repeat scroll 17px 18px;
+            background-color: #ffffff;
+        }
+    }
+    .search__input_red-color::placeholder{
+        color: rgba(54, 68, 89, 0.4);
+        font-weight: 500;
+    }
+    .search__button{
+        width: 100%;
+        height: 60px;
+        background-color: #16c2b8;
+        border: 0;
+        cursor: pointer;
+        img{
+            width: 35px;
+            height: 23px;
+        }
+    }
+}
+
+@media only screen and (min-width : 1024px) {
+    .search{
+        width: 1112px;
+        height: 88px;
+        margin: 0;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 6px 21px 0 rgba(140, 160, 191, 0.24);
+        .search__input{
+            display: block;
+            height: 89px;
+            border-bottom: none;
+            &:nth-child(1){
+                width: 606px;
+                border-right: solid 0.3px #8ca0bf;
+                background: url(images/004-pin.png) no-repeat scroll 24px 32px;
+                background-color: #ffffff;
+            }
+            &:nth-child(2){
+                width: 205px;
+                border-right: solid 0.3px #8ca0bf;
+                background: url(images/group.png) no-repeat scroll 24px 33px;
+                background-color: #ffffff;
+                padding-left: 55px;
+            }
+            &:nth-child(3){
+                width: 210px;
+                border-right: solid 0.3px #8ca0bf;
+                background: url(images/002-bed.png) no-repeat scroll 24px 34px;
+                background-color: #ffffff;
+                padding-left: 59.9px;
+            }
+        }
+        .search__button{
+            display: block;
+            width: 89px;
+            height: 89px;
+            img{
+                width: 40px;
+                height: 28px;
+            }
+        }
+    }
+}
