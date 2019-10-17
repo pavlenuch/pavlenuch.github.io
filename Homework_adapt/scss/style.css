@@ -1,0 +1,68 @@
+header {
+  width: 100%;
+}
+header .logotype {
+  width: 344px;
+}
+header .logotype img {
+  display: inline-block;
+  width: 344px;
+}
+header .logotype span {
+  display: inline-block;
+  width: 100%;
+  color: #000;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+}
+header .logotype .logo-text-disign {
+  font-size: 90px;
+  font-weight: bold;
+  margin: -7px;
+  letter-spacing: 5px;
+}
+header .logotype .logo-text-club {
+  font-size: 50px;
+  letter-spacing: 75px;
+  margin-left: -3px;
+  padding-top: 10px;
+}
+header .logotype p {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+header .wrap-for-buttom {
+  width: 344px;
+}
+header .wrap-for-buttom a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-decoration: none;
+  cursor: pointer;
+  background: #000;
+  color: #ffffff;
+  display: block;
+  width: 314px;
+  height: 83px;
+  line-height: 83px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 6px;
+  margin: 72px auto 0 auto;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #646464;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */
