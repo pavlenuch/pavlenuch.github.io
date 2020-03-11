@@ -7,8 +7,8 @@ body {
 .bigImg-class{
   width: 50%;
   min-height: 30px;
-  position: absolute;
-  top: 220px;
+  position: fixed;
+  top: 0;
   margin: 0 auto;
   display: none;
   z-index: 200;
@@ -201,6 +201,7 @@ body {
   vertical-align: middle;
   margin-top: 4px;
   transition: .5s;
+  text-align: center;
 }
 .block-about-me__content a:hover{
   background-color: #ffffff;
@@ -213,7 +214,7 @@ body {
 }
 .block-about-me__skills{
   margin: 10px 20px 0 270px;
-  width: 400px;
+  width: 430px;
   padding-bottom: 15px;
 }
 .block-about-me__skills img{
@@ -230,7 +231,7 @@ body {
 .wrap-exper-aducat{
   margin-left: 270px;
   margin-right: 20px;
-  width: 540px;
+  width: 830px;
   display: flex;
   justify-content: space-between;
 }
@@ -238,6 +239,9 @@ body {
   width: 250px;
   margin-bottom: 5px;
   }
+.education_bix{
+  margin-left: 20px;
+}
 .block-about-me__title_color{
   color: #292929;
 }
@@ -273,6 +277,7 @@ body {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
+  margin-left: -22px;
 }
 .block-experiense-aducation__aducation_wrap-img img{
   width: 70px;
@@ -424,9 +429,7 @@ body {
 }
 
   /* блок с портфолио */
-  .portfolio__big-works{
-    flex-wrap: nowrap;
-  }
+
   .portfolio__little-works_element:nth-child(3){
     margin-top: 0;
   }
@@ -434,8 +437,25 @@ body {
     margin-top: 0;
   }
 }
-
+@media (max-width: 1124px){
+  .wrap-exper-aducat{
+    margin-left: 250px;
+    margin-right: 10px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .education_bix, .experiense_arch{
+    margin-left: 0;
+    margin-top:20px;
+  }
+}
 @media (max-width: 730px){
+.wrap-title,
+.title{
+  height: 150px;
+}
 .title__name{
   font-size: 19px;
   display: block;
@@ -456,7 +476,12 @@ body {
 .block-experiense-aducation__aducation{
   width: 250px;
   }
+  
   /* блок с портфолио */
+
+  .portfolio{
+  border-radius: 0;
+  }
   .portfolio__big-works_element, .portfolio__little-works_element{
     width: 100%;
     margin-top: 0;
@@ -472,7 +497,7 @@ body {
     transform: rotateY(360deg);
   }
   .back span{
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .wrapper-card:hover .front {
   	transform: none;
@@ -489,15 +514,6 @@ body {
    .portfolio__little-works_element:nth-child(4){
     margin-top: 0;
   }
-  .layout a:nth-child(4){
-    width: 85px;
-    font-size: 10px;
-    padding: 0;
-    height: 28px;
-    margin-top: 26px;
-    line-height: 28px;
-    vertical-align: middle;
-  }
 }
 
 
@@ -505,16 +521,21 @@ body {
   body{
   padding-right: 0;
 }
-.wrap-contacts__avatar{
-  margin-top: 10px;
+
+.bigImg-class{
+  width: 100%;
 }
+.bigImg-class img{
+  margin-top: 0;
+}
+
 .title__name, .title__name_professional{
   margin: 0 auto;
   text-align: center;
 }
 .title__name{
   width: 240px;
-  padding-top: 55px;
+  padding-top: 75px;
 }
 
 .wrap-contacts{
@@ -525,8 +546,6 @@ body {
   margin-left: 0;
   border-top: 2px solid #ffffff;
   margin-top: -5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0);
-
 }
 .wrap-contacts__avatar{
   width: 100px; 
@@ -535,18 +554,9 @@ body {
   border: 3px solid #ffffff;
   margin-bottom: 10px;
 }
-.wrap-contacts_bottom-line{
-  display: block;
-  margin: 5px auto;
-}
 .wrap-contacts__personal-information{
-  width: 110px;
   font-size: 10px;
-  margin: 10px auto 0 auto;
-  text-align: center;
-}
-.wrap-contacts__personal-information:nth-child(8){
-  width: 130px;
+  margin-top: 20px;
 }
 .wrap-contacts__personal-information span {
   display: inline-block;
@@ -554,25 +564,15 @@ body {
   font-size: 12px;
 }
 .wrap-contacts__social-net {
-  width: 100%;
   margin-bottom: 0px;
-  padding-bottom: 10px;
-  padding-left: 0;
+  padding-bottom: 10px
 }
 .wrap-contacts__social-net img{
   width: 30px;
 }
-.wrap-title{
-  height: 150px;
-  margin-top: 0;
-  border-radius: 0;
-}
+
 .contacts__block-hobby{
   display: none;
-}
-.block-about-me{
-border-radius: 0;
-margin-top: 0;
 }
 .block-about-me__title{
   display: block;
@@ -594,34 +594,25 @@ margin-top: 0;
 }
 .block-experiense-aducation__aducation, .block-experiense-aducation__experiense{
   width: 100%;
+  margin-top: 20px;
   }
 .block-about-me__skills{
-  width: 170px;
-  margin: 0 auto;
-  text-align: center;
+  margin: 0 10px 0 10px;
 }
-.block-experiense-aducation, .portfolio{
-  margin-top: 0; 
-  border-radius: 0;
+.block-about-me__skills img{
+  width: 25px;
 }
 .block-experiense-aducation__aducation_wrap-img{
-  justify-content: right;
-  flex-wrap: wrap;
+  /* justify-content: center; */
+  flex-direction: column;
 }
 .block-experiense-aducation__aducation_wrap-img img{
-  width: 40%;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  /* width: 70%; */
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
-.block-experiense-aducation__aducation_wrap-img img{
-  width: 55px;
-  height: 80px;
+.certificate{
+  width: 80% !important;
 }
-.block-experiense-aducation__aducation_wrap-img img:nth-child(2){
-  width: 80px;
-  height: 55px;
-}
-.portfolio{
-  margin-bottom: 0;
-}
+
 }
