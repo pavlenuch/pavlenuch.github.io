@@ -1,14 +1,3 @@
-.bottom-link  .webix_template{
-    text-align: center;
-} 
-.list_color{
-  background-color: #EEEEEE;
-  font-weight: 500;
-  
-}
-.list_color .webix_selected{
-  background-color: #dddfe2;
-}
 .list_color .webix_img_btn{
   background-color: #EEEEEE;
   color: #288C48;
@@ -23,12 +12,9 @@
 }
 
 
-.myhover{
+/* .myhover{
   background-color: #EEEEEE;
-}
-.rank{
-  background-color: #F4F5F9;
-}
+} */
 .removeBtn{
   width:100%;
   height: 30px;

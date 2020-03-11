@@ -5,7 +5,6 @@ const aside = {
     scroll:false,
     select:true,
     width:200,
-    css:"list_color",
     data:[
         {value:"Dashboard", id:"dashboard"},
         {value:"Users", id:"users"},
