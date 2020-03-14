@@ -5,4 +5,4 @@
 # https://pavlenuch.github.io/VK/index.html
 # https://pavlenuch.github.io/Resume-Portfolio/index.html
 # https://pavlenuch.github.io/webix/index.html
-# https://pavlenuch.github.io/Test_task/index.html
+# https://pavlenuch.github.io/Test_photo/index.html
