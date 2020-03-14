@@ -1,0 +1,12 @@
+.background{
+    position: fixed;
+    top: 0;
+    background-image: url(/img/start_img.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    min-height: 1000px;
+    z-index: -1000;
+    // display: none;
+}
