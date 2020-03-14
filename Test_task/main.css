@@ -1,7 +1,7 @@
 .background {
   position: fixed;
   top: 0;
-  background-image: url(/img/bg.png);
+  background-image: url(img/start_img.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -113,7 +113,7 @@
 .hero .hero_bottom {
   max-width: 1370px;
   height: 185px;
-  margin-left: 70px;
+  margin: 0 auto;
 }
 .hero .hero_bottom .hero_bottom_top {
   width: 100%;
@@ -435,10 +435,10 @@
   visibility: visible;
 }
 .gallery .wrap_gallery .left_btn {
-  left: 0;
+  left: 10px;
 }
 .gallery .wrap_gallery .right_btn {
-  right: 0;
+  right: 10px;
 }
 .gallery .wrap_gallery .gallery_scroll {
   position: absolute;
