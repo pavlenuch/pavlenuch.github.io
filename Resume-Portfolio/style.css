@@ -163,9 +163,6 @@ body {
   margin: 0 auto;
   width: 45px;
 }
-.contacts__block-hobby_element:nth-child(5) img{
-  margin-bottom: 6px;
-}
 .block-about-me{
   width: 100%;
   min-height: 150px;
