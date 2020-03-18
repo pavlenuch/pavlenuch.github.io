@@ -1,0 +1,115 @@
+.flex_home-history{
+    .home-history{
+        position: relative;
+        padding-top: 100px;
+        padding-right: 15px;
+        img{
+            position: absolute;
+            top: 100;
+            left: 0;
+        }
+        .history-text{
+            padding-bottom: 45px;
+            margin-bottom: 45px;
+            border-bottom: 1px solid #cccccc;
+            margin-left: 50px;
+            h3{
+                font-family: 'Droid Serif', serif;
+                font-size: 21px;
+                font-style: italic;
+                font-weight: bold;
+                letter-spacing: 0.4px;
+                margin-bottom: 30px;
+                margin-top: 0;
+                line-height: 1.1;
+            }
+            p{
+                font-size: 17px;
+                line-height: 30px;
+                letter-spacing: 0.35px;
+                color: #666666;
+                margin-bottom: 0;
+            }
+        }
+        .wrap_history-box{
+            margin-left: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: stretch;
+            .history-box{
+                min-height: 59px;
+                margin-bottom: 30px;
+                width: 50%;
+                i{
+                    display: inline-block;
+                    background-color: #f5f5f5;
+                    color: #999999;
+                    width: 59px;
+                    height: 59px;
+                    left: 0;
+                    font-size: 20px;
+                    line-height: 59px;
+                    text-align: center;
+                }
+                span{
+                    padding-left: 15px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 15px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin: 21px 0;
+                    letter-spacing: 1.5px;
+                }
+            }
+        }
+    }
+    .history-img{
+        width: 100%;
+        text-align: center;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+@media (min-width: 768px){
+    .flex_home-history{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        .wrap_history-box{
+            display: flex;
+            flex-direction: column;
+        }
+        .history-img{
+            padding-top: 100px;
+        }
+    }
+}
+@media (min-width: 992px){
+    .flex_home-history{
+        width: 970px;
+        justify-content: space-around;
+        .home-history{
+            padding-right: 50px;
+            .wrap_history-box{
+                display: flex;
+                flex-direction: row;
+                .history-box{
+                    width: 33%;
+                    span{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px){
+    .flex_home-history{
+        width: 1170px;
+    }
+}

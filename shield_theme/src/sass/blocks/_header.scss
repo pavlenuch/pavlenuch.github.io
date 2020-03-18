@@ -1,0 +1,232 @@
+header{
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    .menu-header {
+        background-color: #2b2b2b;
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0 auto;
+        border-bottom: 1px solid transparent;
+        .header-line{
+            display: none;
+        }
+        .image-logo {
+            display: inline-block;
+            line-height: 99px;
+            vertical-align: middle;
+            margin-right: 15px;
+            display: none;
+        }
+        #first__level-menu-name{
+            display: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .logo {
+            display: inline-block;
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 99px;
+            vertical-align: middle;
+            font-family: 'Montserrat', sans-serif;
+            }
+            .icon-search {
+                color: #fff;
+                margin-left: 15px;
+                font-size: 17px;
+                float: right;
+                padding: 38px 0;
+            }
+            .basket {
+                cursor: pointer;
+                float: right;
+                font-size: 17px;
+                padding: 38px 5px 38px 5px;
+            }
+            .burger-right{
+                display: none;
+                .burger-right-menu{
+                    display: none;
+                }
+            }
+            #menu-basket:checked ~ .basket::after  {
+                width: 300px;
+                height: 90px;
+                background-color: rgba(0, 0, 0, 0.85);
+                position: fixed;
+                left: auto;
+                right: -1px;
+                top: 101px;
+                content: '';
+                z-index: 2000;
+            }
+            .burger {
+                display: block;
+                box-sizing: border-box;
+                float: right;
+                width: 44px;
+                height: 34px;
+                margin: 31px 0 32px;
+                outline: none;
+                border: 1px solid #CC9900;
+                background-color: #CC9900;
+                cursor: pointer;
+                .icon-menu {
+                    font-size: 26px;
+                    padding-left: 2.5px;
+                    padding-top: 2px;
+                }
+                &:hover {
+                    background-color: #fff;
+                    .icon-menu {
+                    color: #CC9900;
+                    }
+                }
+            }
+            .burger-right {
+                float: right;
+                padding: 38px 25px;
+                font-size: 18px;
+            }
+            .right-icon-menu{
+                cursor: pointer;
+            }
+            .burger-right-menu{
+                width: 375px;
+                height: 870px;
+                box-sizing: border-box;
+                color: #fff;
+                background-color: #212121;
+                padding: 30px;
+                h3{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 16px;
+                    margin-bottom: 25px;
+                    margin-top: 30px;
+                    text-transform: uppercase;
+                }
+                h4{
+                    margin-bottom: 25px;
+                    margin-top: 60px;
+                }
+                a{
+                    display: block;
+                    font-family: 'Droid Serif', serif;
+                    color: #fcf9f9;
+                    font-size: 12px;
+                    font-style: italic;
+                    text-decoration: none;
+                    margin-bottom: 25px;
+                    transition: all 1s ease 0s;
+                    &:hover{
+                        color: #f89b1c;
+                        padding-left: 20px;
+                    }
+                }
+            }
+            #right-menu:checked ~ .burger-right-menu{
+                display: block;
+            }
+        .menu {
+            clear: right;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: auto;
+            overflow-x: hidden;
+            .header-line {
+                border-bottom: 1px solid #fff; 
+                margin-bottom: 10px;
+            }
+            .first__level-menu {
+                a{
+                    color: #fff;
+                    display: block; 
+                    line-height: 32px;
+                    font-weight: bold;
+                    font-size: 14px;
+                    font-family: 'Montserrat', sans-serif;
+                }
+
+                .first__level-menu-icon {
+                    display: block;
+                    box-sizing: border-box;
+                    width: 22px;
+                    height: 22px;
+                    background-color: #cc9900;
+                    cursor: pointer;
+                    float: right;
+                    position: relative;
+                    margin-right: 15px;
+                }
+                .icon-down-open   {
+                    display: block;
+                    color: #fff;
+                    font-size: 10px;
+                    position: absolute;
+                    top: -4px;
+                    left: 4px;
+                }
+                a {
+                    display: block;
+                    font-size: 13px;
+                    color: #999999;
+                    text-decoration: none;
+                    display: none;
+                    &:hover {
+                        color: #CC9900;
+                    }
+                }
+                .box_second__level-menu{
+                    width: 100%;
+                    display: none;
+                    .second__level-menu {
+                        width: 100%;
+                        padding-left: 15px;
+                        color: #fff;
+                        font-size: 13px;
+                        font-family: 'Montserrat', sans-serif;
+                        a {
+                            font-weight: normal;
+                            display: block;
+                            font-size: 13px;
+                            color: #999999;
+                            text-decoration: none;
+                            &:hover {
+                                color: #CC9900;
+                            }
+                            i{
+                                padding-right: 5px;
+                            }
+                        }
+                        a:last-child {
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+            .first__level-menu:hover {
+                .box_second__level-menu, a {
+                    display: block;
+                }
+            }
+        }
+        #menu-toggle, .hidden,
+        #menu-basket, #right-menu {
+            display: none;
+        }
+        #menu-toggle:checked + .burger {
+            background-image: url(img/menu-close.png);
+            background-size: 50px;
+            background-position: center;
+        }
+        #menu-toggle:checked ~ .hidden {
+            display: block;
+        }
+    }
+
+    }
