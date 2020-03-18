@@ -1,0 +1,106 @@
+.footer{
+    width: 100%;
+    background-color: #7e7e7e;
+    padding-top: 50px;
+    margin: 0;
+    h4{
+        width: 167px;
+        color: #F4D167;
+        margin: 0 auto;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+    }
+    .footer_text{
+        display: block;
+        width: 1024px;
+        margin: 0 auto;
+        margin-top: 17px;
+        font-size: 30px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .wrap_link_footer{
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        .wrap_link_elem{
+            width: 80px;
+            margin-right: 20px;
+            img{
+                width: 100%;
+            }
+            .wrap_link_elem-viber-vk{
+                margin-top: 10px;
+            }
+            span{
+                display: block;
+                text-align: center;
+                letter-spacing: -0.3px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                font-size: 14px;
+                line-height: 140%;
+                // margin-top: 10px;
+
+            }
+        }
+        .wrap_link_elem:nth-child(6){
+            margin-right: 0;
+        }
+    }
+    .footer_bottom{
+        width: 100%;
+        margin-top: 50px;
+        opacity: 0.8;
+        border-top: 1px solid #FFFFFF;
+        span{
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            margin-top: 21px;
+            margin-bottom: 18px;
+            color: #FFFFFF;
+            font-size: 15px;
+            line-height: 24px;
+            a{
+                color: #FFFFFF;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width: 1023px) {
+    .footer{
+        .footer_text{
+            width: 90%;
+            margin-top: 15px;
+            font-size: 24px;
+        }
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width: 767px){
+    .footer{
+        .footer_text{
+            width: 90%;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    }
+    .wrap_link_footer{
+        width: 100%;
+        margin-top: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        .wrap_link_elem{
+            width: 30%;
+            margin: 10px 5px 0 5px !important;
+            .wrap_link_elem-viber-vk{
+                margin-top: 10px;
+            }
+        }
+    }
+}
