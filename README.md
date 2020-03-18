@@ -1,4 +1,6 @@
-# https://pavlenuch.github.io/public/blog.html
+## https://pavlenuch.github.io/shield_theme/public/blog.html
+## https://pavlenuch.github.io/shield_theme/public/contact-1.html
+## https://pavlenuch.github.io/shield_theme/public/index.html
 # https://pavlenuch.github.io/ProjectAPI/index.html
 # https://pavlenuch.github.io/ProgectWriters/index.html
 # https://pavlenuch.github.io/Homework_adapt/index.html
