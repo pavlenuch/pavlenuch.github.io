@@ -384,19 +384,6 @@ body {
   background-color: #fff;
   color: #292929;
 }
-.layout{
- display: flex;
- flex-wrap: wrap;
-}
-.layout a{
-  font-size: 11px;
-  width: 75px;
-}
-.layout a:nth-child(4){
-  font-size: 13px;
-  width: 110px;
-  margin-top: 8px;
-}
 .portfolio__title-small{
   display: block;
   width: 250px;

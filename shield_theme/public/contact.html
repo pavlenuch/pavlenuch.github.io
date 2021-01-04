@@ -53,7 +53,7 @@
             <ul class="menu hidden">
                 <div class="header-line"></div>
                 <li class="first__level-menu">
-                    <span class="first__level-menu-name index-button_home">HOME</span>
+                    <span class="first__level-menu-name index-button_home" id="click_home">HOME</span>
                     <label for="first__level-menu-name" class="first__level-menu-icon"><i class="icon-down-open"></i></label>
                     <input type="checkbox" id="first__level-menu-name" name="level-menu" value="home">
                    
@@ -80,88 +80,8 @@
                         </li>
                     </ul>
                 </li>
-                <li class="first__level-menu">
-                    <span class="first__level-menu-name">PAGE</span>
-                    <label for="first__level-menu-name" class="first__level-menu-icon"><i class="icon-down-open"></i></label>
-                    <input type="checkbox" id="first__level-menu-name" name="level-menu" value="home">
-                    <ul class="box_second__level-menu">
-                        <li class="second__level-menu">HEADER LIST ONE
-                            <a href="#">Header 1</a>
-                            <a href="#">Header 2</a>
-                            <a href="#">Header 3</a>
-                            <a href="#">Header 4</a>
-                            <a href="#">Header 5</a>
-                            <a href="#">Header 6</a>
-                        </li>
-                        <li class="second__level-menu">HEADER LIST TWO
-                            <a href="#">Header 7</a>
-                            <a href="#">Header 8</a>
-                            <a href="#">Header 9</a>
-                            <a href="#">Header 10</a>
-                            <a href="#">Header 11</a>
-                            <a href="#">Header 12</a>
-                        </li>
-                        <li class="second__level-menu">HEADER LIST THREE
-                            <a href="#">Header 13</a>
-                            <a href="#">Header 14</a>
-                            <a href="#">Header 15</a>
-                            <a href="#">Header 16</a>
-                            <a href="#">Header 17</a>
-                            <a href="#">Header 18</a>
-                        </li>
-                        <li class="second__level-menu">PAGES
-                            <a href="#">About Me</a>
-                            <a href="#">About Us 1</a>
-                            <a href="#">About Us 2</a>
-                            <a href="#">Service</a>
-                            <a href="#">404</a>
-                            <a href="#">Cooming Soon</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="first__level-menu"><span class="first__level-menu-name">SHORTCODE</span>
-                    <input type="checkbox" id="first__level-menu-name" name="level-menu" value="shortcode">
-                    <label for="first__level-menu-name" class="first__level-menu-icon"><i class="icon-down-open"></i></label>
-                    <ul class="box_second__level-menu">
-                        <li class="second__level-menu">SHORTCODES 01
-                            <a href="#"><i class="icon-sort icon-second__level-menu"></i>Accordion & Toggles</a> 
-                            <a href="#"><i class="icon-quote-left  icon-second__level-menu"></i>Block Quotes</a>
-                            <a href="#"><i class="icon-bookmark icon-second__level-menu"></i>Brands</a>
-                            <a href="#"><i class="icon-sort icon-second__level-menu"></i>Buttons</a>
-                            <a href="#"><i class="icon-sort icon-second__level-menu"></i>Carousel</a>
-                            <a href="#"><i class="icon-clock icon-second__level-menu"></i>Countdown</a>
-                            <a href="#"><i class="icon-link icon-second__level-menu"></i>Facts Box</a>
-                        </li>
-                        <li class="second__level-menu">SHORTCODES 02
-                            <a href="#"><i class="icon-ellipsis icon-second__level-menu"></i>Divider</a>
-                            <a href="#"><i class="icon-font icon-second__level-menu"></i>Dropcaps</a>
-                            <a href="#"><i class="icon-location icon-second__level-menu"></i>Google Maps</a>
-                            <a href="#"><i class="icon-header icon-second__level-menu"></i>Heading</a>
-                            <a href="#"><i class="icon-exchange icon-second__level-menu"></i>Image Gallery</a>
-                            <a href="#"><i class="icon-picture icon-second__level-menu"></i>Image</a>
-                            <a href="#"><i class="icon-cogs icon-second__level-menu"></i>Pagginations</a>
-                        </li>
-                        <li class="second__level-menu">SHORTCODES 03
-                            <a href="#"><i class="icon-picture icon-second__level-menu"></i>Cta Box</a>
-                            <a href="#"><i class="icon-list-alt icon-second__level-menu"></i>Icon Box</a>
-                            <a href="#"><i class="icon-list icon-second__level-menu"></i>Icon List</a>
-                            <a href="#"><i class="icon-comment icon-second__level-menu"></i>Message Box</a>
-                            <a href="#"><i class="icon-th-large icon-second__level-menu"></i>Post Grid</a>
-                            <a href="#"><i class="icon-money icon-second__level-menu"></i>Pricing Table</a>
-                            <a href="#"><i class="icon-users icon-second__level-menu"></i>Team Member</a>
-                        </li>
-                        <li class="second__level-menu">SHORTCODES 04
-                            <a href="#"><i class="icon-play icon-second__level-menu"></i>Media Embeds</a>
-                            <a href="#"><i class="icon-chart-bar icon-second__level-menu"></i>Pie Chart</a>
-                            <a href="#"><i class="icon-bookmark icon-second__level-menu"></i>Progress Steps</a>
-                            <a href="#"><i class="icon-credit-card icon-second__level-menu"></i>Progress bar</a>
-                            <a href="#"><i class="icon-list icon-second__level-menu"></i>Tabs</a>
-                            <a href="#"><i class="icon-quote-right icon-second__level-menu"></i>Testimonials</a>
-                            <a href="#"><i class="icon-text-width icon-second__level-menu"></i>Test Block</a>
-                        </li>
-                        </ul> 
-                </li>
-                <li class="first__level-menu"><span class="first__level-menu-name">BLOG</span>
+
+                <li class="first__level-menu"><span class="first__level-menu-name" id="click_blog">BLOG</span>
                     <input type="checkbox" id="first__level-menu-name" name="level-menu" value="blog">
                     <label for="first__level-menu-name" class="first__level-menu-icon"><i class="icon-down-open"></i></label>
                     <ul class="box_second__level-menu">
@@ -195,56 +115,9 @@
                         </li>
                     </ul> 
                 </li>
+               
                 <li class="first__level-menu">
-                    <span class="first__level-menu-name">PORTFOLIO</span>
-                    <input type="checkbox" id="first__level-menu-name" name="level-menu" value="portfolio">
-                    <label for="first__level-menu-name" class="first__level-menu-icon"><i class="icon-down-open"></i></label>
-                    <ul class="box_second__level-menu">
-                        <li class="second__level-menu second__level-menu-portfolio">PORTFOLIO GRID STYLE
-                            <a href="#">Portfolio 2 Grid</a>
-                            <a href="#">Portfolio 3 Grid</a>
-                            <a href="#">Portfolio 4 Grid</a>
-                            <a href="#">Porfolio Grid Sidebar</a>
-                        </li>
-                        <li class="second__level-menu second__level-menu-portfolio">PORTFOLIO MANSORY STYLE
-                            <a href="#">Mansory 2 Column</a>
-                            <a href="#">Mansory 3 Column</a>
-                            <a href="#">Mansory 4 Column</a>
-                            <a href="#">Mansory Sidebar</a>
-                        </li>
-                        <li class="second__level-menu second__level-menu-portfolio">PORTFOLIO EXTRA STYLE
-
-                            <a href="#">Portfolio No Padding</a>
-                            <a href="#">Portfolio Load</a>
-                            <a href="#">Portfolio Lazy Load</a>
-                            <a href="#">Portfolio Paggination</a>
-                        </li>
-                        <li class="second__level-menu second__level-menu-portfolio">PORTFOLIO SINGLE STYLE
-                            <a href="#">Image Format</a>
-                            <a href="#">Gallery Format</a>
-                            <a href="#">Video Format</a>
-                            <a href="#">Audio Format</a>
-                        </li>
-                    </ul> 
-                </li>
-                <li class="first__level-menu">
-                    <span class="first__level-menu-name">SHOP</span>
-                    <input type="checkbox" id="first__level-menu-name" name="level-menu" value="shop">
-                    <label for="first__level-menu-name" class="first__level-menu-icon"><i class="icon-down-open"></i></label>
-                    <ul class="box_second__level-menu box_second__level-menu-shop">
-                        <li class="second__level-menu">
-                            <a href="#">Shop Fullwidth</a>
-                            <a href="#">Shop Sidebar Left</a>
-                            <a href="#">Shop Sidebar Right</a>
-                            <a href="#">Product Single</a>
-                            <a href="#">Cart</a>
-                            <a href="#">Checkout</a>
-                            <a href="#">Login</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="first__level-menu">
-                    <span class="first__level-menu-name">CONTACT</span>
+                    <span class="first__level-menu-name" id="click_contact">CONTACT</span>
                     <input type="checkbox" id="first__level-menu-name" name="level-menu" value="contact">
                     <label for="first__level-menu-name" class="first__level-menu-icon"><i class="icon-down-open"></i></label>
                     <ul class="box_second__level-menu box_second__level-menu-contact">
@@ -381,6 +254,6 @@
         </div>
     </footer>
  
-    
+    <script src="script.js"></script>
 </body>
 </html>
