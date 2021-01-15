@@ -1,0 +1,89 @@
+.header{
+    height: 60px;
+    line-height: 60px;
+    background-color: #ebf3ff;
+    .header__logo{
+        width: 108px;
+        height: 44px;
+        object-fit: contain;
+        vertical-align: middle;
+        margin-left: 20px;
+    }
+    .header__icon{
+        display: none;
+    }
+    .header__wrap-basket{
+        width: 59px;
+        height: 60px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #0d3a7f;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .header__basket{
+            display: inline-block;
+            width: 37px;
+            height: 21px;
+            object-fit: contain;
+        }
+    }
+    .header__wrap-basket_full{
+        display: none;
+    }
+}
+@media only screen and (min-width : 1024px) {
+    .header{
+        height: 89px;
+        background-color: #ffffff;
+        display: flex;
+        .wrap_logo{
+            width: 478px;
+            height: 89px;
+            background-color: #ebf3ff;
+            order: 0;
+            .header__logo{
+                width: 129px;
+                height: 53px;
+                display: inline-block;
+                object-fit: none;
+                margin-left: 131px;
+                margin-top: 18px;
+            }
+        }
+        .header__icon{
+           display: block;
+           width: 89px;
+           height: 89px;
+           border-right: solid 0.5px #8ca0bf;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           cursor: pointer;
+           img{
+               display: block;
+           }
+        }
+        .header__icon_phone{
+            order: 2;
+        }
+        .header__icon_person{
+            order: 3;
+        }
+        .header__wrap-basket{
+            display: none;
+        }
+        .header__wrap-basket_full{
+            order: 4;
+            width: 85px;
+            height: 89px;
+            background-color: #0d3a7f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+}
