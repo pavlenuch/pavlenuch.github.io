@@ -4,7 +4,7 @@
 ##### https://pavlenuch.github.io/travel-agents-portal/public/index.html
 ##### https://pavlenuch.github.io/progect-writers/index.html
 ##### https://pavlenuch.github.io/homework-adapt/index.html
-##### https://pavlenuch.github.io/vk/index.html
+##### https://pavlenuch.github.io/vk
 ##### https://pavlenuch.github.io/resume-portfolio/index.html
 ##### https://pavlenuch.github.io/webix/index.html
 ##### https://pavlenuch.github.io/photo-studio/index.html
