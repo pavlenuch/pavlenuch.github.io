@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+.title {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 40px;
+}
+.wrap_content {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.image {
+    width: 539.22px;
+}
+.description {
+    width: 586px;
+}
+.big_text {
+    width: 100%;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+.small_text {
+    width: 381px;
+    margin-top: 36px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+}
+.btn {
+    width: 216px;
+    height: 68px;
+    background: #333333;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 64px;
+}
+.footer {
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+    position: fixed;
+    bottom: 17px;
+}
+.footer_name {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media (max-width: 376px){
+    .wrapper {
+        width: 100%;
+    }
+    .title {
+        margin-top: 20px;
+        margin-left: 24px;
+    }
+    .wrap_content {
+        margin-top: 64px;
+        display: block;
+    }
+    .image {
+        width: 286.83px;
+        display: block;
+        margin: 0 auto;
+    }
+    .description {
+        width: 100%;
+    }
+    .big_text {
+        width: 350px;
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 71px;
+        margin-top: 60px;
+        margin-left: 5px;
+    }
+    .small_text {
+        width: 328px;
+        margin-top: 30px;
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.035em;
+        color: #4F4F4F;
+        margin-left: 5px;
+    }
+    .btn {
+        margin-top: 66px;
+        margin-bottom: 114px;
+        margin-left: 5px;
+    }
+    .footer {
+        width: 350px;
+        position: static;
+        margin-bottom: 24px;
+    }
+
+
+}
