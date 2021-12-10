@@ -13,4 +13,5 @@
 ##### https://pavlenuch.github.io/todo-react/
 ##### https://pavlenuch.github.io/todo-vue/
 ##### https://pavlenuch.github.io/portfolio/
+##### https://pavlenuch.github.io/404-not-found/index.html
 
