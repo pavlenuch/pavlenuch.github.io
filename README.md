@@ -16,3 +16,4 @@
 ##### https://pavlenuch.github.io/error/index.html
 ##### https://pavlenuch.github.io/my_team_page/index.html
 ##### https://pavlenuch.github.io/devchallenges/interior_consultant/index.html
+##### https://pavlenuch.github.io/devchallenges/recipe_page_master/index.html
