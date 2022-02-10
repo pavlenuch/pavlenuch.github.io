@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="shortcut icon" href="img/devchallenges.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Chekout page</title>
+</head>
+
+<body>
+  <main>
+    <h1>Checkout</h1>
+
+    <div class="wrap__form-basket">
+
+      <form action="./index.html" method="get" enctype="text/plain">
+        <fieldset>
+          <legend>Contact infomation</legend>
+          <div class="wrap__long-input">
+            <span class="material-icons">mail</span>
+            <label for="input-email" class="label-text">E-mail</label>
+            <input type="email" id="input-email" class="long-input" autocomplete="off" required placeholder="Enter your email..."> 
+          </div>
+          <div class="wrap__long-input">
+            <span class="material-icons">call</span>              
+            <label for="input-phone" class="label-text">Phone</label>
+            <input type="tel" id="input-phone" class="long-input" autocomplete="off" required placeholder="Enter your phone...">
+          </div>
+        </fieldset>
+        <fieldset class="two-fieldset">
+          <legend>Shipping address</legend>
+          <div class="wrap__long-input">
+            <span class="material-icons">account_circle</span>
+            <label for="input-name" class="label-text">Full name</label>
+            <input type="text" id="input-name" class="long-input" autocomplete="off" required placeholder="Your name..."> 
+          </div>
+          <div class="wrap__long-input">
+            <span class="material-icons">home</span>              
+            <label for="input-address" class="label-text">Address</label>
+            <input type="text" id="input-address" class="long-input" autocomplete="off" required placeholder="Your address...">
+          </div>
+          <div class="wrap__long-input">
+            <span class="material-icons">location_city</span>              
+            <label for="input-city" class="label-text">City</label>
+            <input type="text" id="input-city" class="long-input" autocomplete="off" required placeholder="Your city...">
+          </div>
+
+          <div class="wrap_inputs-country-code">
+            <div class="wrap__short-input">
+              <span class="material-icons">public</span>    
+              <div class="select-arrow"><span class="material-icons">expand_more</span></div>
+              <label for="input-city" class="label-text">Country</label>
+              <select class="short-input" name="country" id="select-city">
+                <option disabled selected class="dislab">Your country...</option>
+                <option class="item">Turkey</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Italy">Italy</option>
+                <option value="Canada">Canada</option>
+                <option value="Germany">Germany</option>
+              </select>
+            </div>
+            <div class="wrap__short-input">
+              <span class="material-icons">markunread_mailbox</span>              
+              <label for="input-code" class="label-text">Postal code</label>
+              <input type="number" id="input-code" class="short-input" autocomplete="off" required placeholder="Your postal code...">
+            </div>
+          </div>
+          <div class="wrap_checkbox">
+            <input type="checkbox" name="save_info" id="save_info" required class="chbx">
+            <label for="save_info" class="label-chbx">Save this information for next time</label>
+          </div>
+        </fieldset>
+        <div class="wrap__button-submit">
+          <button type="submit" class="button-submit">Continue</button>
+        </div>
+      </form>
+
+      <div class="basket">
+        <div class="wrap_product">
+          <img src="img/photo1.png" alt="back" class="product__img">
+          <div class="product-info">
+            <h3 class="product__title">Vintage Backbag</h3>
+            <div class="price">
+              <span class="price-actual">$54.99</span>
+              <span class="price-old">$94.99</span>
+            </div>
+            <div class="counter">
+              <div class="increment"><span class="material-icons">remove</span></div>
+              <span class="counter-num">1</span>
+              <div class="decrement"><span class="material-icons">add</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrap_product">
+          <img src="img/photo2.png" alt="back" class="product__img">
+          <div class="product-info">
+            <h3 class="product__title">Levi Shoes</h3>
+            <div class="price">
+              <span class="price-actual">$74.99</span>
+              <span class="price-old">$124.99</span>
+            </div>
+            <div class="counter">
+              <div class="increment"><span class="material-icons">remove</span></div>
+              <span class="counter-num">1</span>
+              <div class="decrement"><span class="material-icons">add</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="basket-result">
+          <h3 class="basket-result__text">Shipping</h3>
+          <span class="basket-result__res">$19</span>
+        </div>
+        <div class="basket-result">
+          <h3 class="basket-result__text">Total</h3>
+          <span class="basket-result__res">$148.98</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  
+  <footer>
+    created by <a href="https://devchallenges.io/portfolio/pavlenuch" target="_blank"><b>Aleksandr</b></a> - devChallenges.io
+  </footer>
+  
+</body>
+</html>

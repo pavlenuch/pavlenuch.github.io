@@ -18,3 +18,4 @@
 ##### https://pavlenuch.github.io/devchallenges/interior_consultant/index.html
 ##### https://pavlenuch.github.io/devchallenges/recipe_page_master/index.html
 ##### https://pavlenuch.github.io/devchallenges/my_gallery_master/index.html
+##### https://pavlenuch.github.io/devchallenges/checkout_page_master/index.html
