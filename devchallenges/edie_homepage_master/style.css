@@ -1,0 +1,748 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 1332px;
+    margin: 51px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: Heebo;
+    font-weight: 800;
+    font-size: 36px;
+    color: #333333;
+}
+.header__nav {
+    width: 703px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__item {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+    text-decoration: none;
+}
+#menu__toggle {
+    display: none;
+}
+
+
+main {
+    width: 1332px;
+    margin: 104px auto 0 auto;
+}
+.arcticle-services,
+.arcticle-presentation {
+    width: 100%;
+}
+.presentation_blue-text {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    color: #2D9CDB;
+    margin-left: 235px;
+}
+.title {
+    width: 543px;
+    margin: 16px 0 0 235px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 48px;
+    color: #333333;
+}
+.presentation__img {
+    width: 1332px;
+    display: block;
+    border-radius: 18px;
+    margin-top: 42px;
+}
+.presentation__title-input {
+    width: 366px;
+    margin: 42px 0 0 235px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 48px;
+    color: #333333;
+}
+.presentation__text-input {
+    width: 366px;
+    margin: 42px 0 0 235px;
+    font-family: Poppins;
+    font-size: 18px;
+    color: #4F4F4F;
+    font-weight: normal;
+}
+.wrap-presentation__input {
+    width: 366px;
+    margin: 42px 0 0 235px;
+    position: relative;
+}
+.presentation__input_label {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    color: #828282;
+    cursor: pointer;
+}
+.presentation__input {
+    width: 350px;
+    height: 57px;
+    background-color: #F2F2F2;
+    border-radius: 12px;
+    display: block;
+    margin-top: 9px;
+    outline: none;
+    border: none;
+    padding: 0 98px 0 21px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+}
+.presentation__input::placeholder {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    color: #BDBDBD;
+}
+.presentation__input_btn {
+    width: 94px;
+    height: 49px;
+    background-color: #2D9CDB;
+    border-radius: 12px;
+    position: absolute;
+    outline: none;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    color: #F2F2F2;
+    top: 34px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.services__title {
+    width: 346px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 36px;
+    color: #333333;
+    margin-top: 200px;
+}
+.wrap-services-card {
+    width: 100%;
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 34px;
+}
+.card-service {
+    width: 341px;
+    height: 422px;
+    border-radius: 24px;
+}
+.service__icon_green,
+.service__icon_red,
+.service__icon_blue {
+    width: 67px;
+    height: 67px;
+    border-radius: 16px;
+    margin: 46px 0 0 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service__icon_blue {
+    background-color: #2D9CDB;
+}
+.service__icon_green {
+    background-color: #27AE60;
+}
+.service__icon_red {
+    background-color: #EB5757;
+}
+.material-icons {
+    color: #FFFFFF;
+    font-size: 34px;
+}
+.service-title {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333333;
+    margin: 35px 0 0 34px;
+}
+.service-text {
+    width: 273px;
+    margin: 24px 0 0 34px;
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 16px;
+    color: #4F4F4F;
+}
+.service-btn {
+    width: 116px;
+    height: 42px;
+    background-color: #E0E0E0;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    color: #828282;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin: 30px 0 0 34px;
+}
+.card-service:hover {
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
+.card-service:hover .service-btn {
+    background-color: #2D9CDB;
+    color: #FFFFFF;
+}
+
+/*? Block - arcticle-design*/
+.arcticle-design {
+    width: 100%;
+    margin-top: 194px;
+}
+.design__title {
+    width: 448px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 36px;
+    color: #333333;
+}
+.wrap-design-card {
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+}
+.design-card {
+    width: 545px;
+    margin-top: 141px;
+}
+.design-card:nth-of-type(4),
+.design-card:nth-of-type(2){
+    margin-top: 0;
+}
+.design-card__img {
+    width: 100%;
+    border-radius: 12px;
+}
+.design-card__small-text {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 14px;
+    color: #828282;
+    margin-top: 20px;
+}
+.design-card__big-text {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+}
+.arrow-see {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    color: #2D9CDB;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+}
+
+/*? Block - arcticle-team*/
+.arcticle-team {
+    width: 1103px;
+    margin: 200px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.team-info {
+    width: 280px;
+    margin-top: 120px;
+}
+.team-title {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    color: #EB5757;
+}
+.team__big-text {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 30px;
+    color: #333333;
+}
+.team__small-text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4F4F4F;
+}
+.team-photo {
+    width: 635px;
+    height: 585px;
+    position: relative;
+}
+.woman {
+    width: 320px;
+    border-radius: 24px;
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+.man-top {
+    width: 260px;
+    border-radius: 24px;
+    position: absolute;
+    top: 0;
+    right: 31px;
+}
+.man-bottom {
+    width: 291px;
+    border-radius: 24px;
+    position: absolute;
+    top: 284px;
+    right: 0;
+}    
+.arcticle-feedback {
+    width: 1103px;
+    margin: 200px auto 0 auto;
+}
+.feedback-text {
+    width: 937px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 49px;
+}
+.feedback-man {
+    display: flex;
+}
+.feedback-img {
+    width: 82px;
+    border-radius: 12px;
+}
+.feedback-name {
+    margin-left: 30px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+    display: block;
+}
+.feedback-job {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    color: #828282;
+    margin: 12px 0 0 30px;
+}
+footer {
+    width: 100%;
+    height: 385px;
+    margin-top: 200px;
+    background-color: #100E1D;
+    padding-top: 46px;
+}
+.wrap-footer-content {
+    width: 1103px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_nav {
+    width: 92px;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.footer_nav a {
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.footer_contacts {
+    width: 94px;
+    height: 102px;
+}
+.footer_logo {
+    color: #F2F2F2;
+}
+.wrap-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__icon {
+    width: 24px;
+    margin-top: 22px;
+}
+.footer_input {
+    margin: 0;
+}
+.footer_input > label {
+    color: #F2F2F2;
+}
+.footer_link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #F2F2F2;
+    margin-top: 118px;
+}
+.footer_link > a {
+    color: #F2F2F2;
+}
+
+
+
+
+@media (max-width: 1332px) {
+    header {
+        width: 100%;
+        padding: 0 20px 0 20px;
+        margin: 13px auto 0 auto;
+    }
+    .header__nav {
+        width: 600px;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 20px 0 20px;
+        margin: 48px auto 0 auto;
+    }
+
+    /*? Block - arcticle-presentation*/
+    .presentation_blue-text {
+        margin-left: 30px;
+    }
+    .title {
+        margin: 16px 0 0 30px;
+    }
+    .presentation__img {
+        width: 100%;
+    }
+    .presentation__title-input {
+        margin: 42px 0 0 30px;
+    }
+    .presentation__text-input {
+        margin: 42px 0 0 30px;
+    }
+    .wrap-presentation__input {
+        margin: 42px 0 0 30px;
+    }
+
+    /*? Block - arcticle-services*/
+    .services__title {
+        margin-top: 102px;
+        font-size: 24px;
+    }
+    .wrap-services-card {
+        padding-left: 0;
+    }
+
+    /*? Block - arcticle-design*/
+    .arcticle-design {
+        width: 100%;
+        margin-top: 103px;
+    }
+    .design__title {
+        width: 267px;
+        font-size: 24px;
+        margin: 0 auto;
+    }
+    .design-card {
+        margin-top: 0;
+        margin-bottom: 36px;
+        margin: 0 0 36px 0;
+    }
+
+    /*? Block - arcticle-team*/
+    .arcticle-team {
+        margin: 100px auto 0 auto;
+    }
+
+    /*? Block - arcticle-feedback*/
+    .arcticle-feedback {
+        width: 937px;
+        margin: 100px auto 0 auto;
+    }
+
+    /*? Block - footer*/
+    footer {
+        margin-top: 100px;
+    }
+    .wrap-footer-content {
+        width: 1090px;
+    }
+}
+
+@media (max-width: 1090px) {
+    /*? Block - arcticle-services*/
+    .services__title {
+        width: 259px;
+        margin: 102px auto 0 auto;
+    }
+    .wrap-services-card {
+        flex-wrap: wrap;
+    }
+    .card-service {
+        margin-bottom: 75px;
+    }
+    .wrap-design-card {
+        margin-top: 48px;
+    }
+
+    /*? Block - arcticle-team*/
+    .arcticle-team {
+        width: 100%;
+    }
+    .team-info {
+        margin-top: 0;
+    }
+    .team-photo {
+        width: 350px;
+        height: 321px;
+    }
+    .woman {
+        width: 178px;
+        top: 64px;
+    }
+    .man-top {
+        width: 145px;
+        right: 17px;
+    }
+    .man-bottom {
+        width: 162px;
+        top: 153px;
+    }  
+
+    /*? Block - arcticle-feedback*/
+    .feedback-text,
+    .arcticle-feedback {
+        width: 100%;
+    }
+
+    /*? Block - footer*/
+    footer {
+        padding-left: 20px;
+    }
+    .wrap-footer-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        padding: 0 20px 0 20px;
+        margin: 13px auto 0 auto;
+    }
+    .logo {
+        z-index: 200;
+    }
+    .header__nav {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(10px);
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__item {
+        margin-top: 15px;
+    }
+    .burger {
+        width: 28.5px;
+        height: 20px;
+        position: relative;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .line {
+        width: 100%;
+        height: 4px;
+        display: block;
+        background-color: #000000;
+    }
+    #menu__toggle:checked ~ .burger > .line:nth-of-type(1) {
+        display: none;
+    }
+    #menu__toggle:checked ~ .burger > .line:nth-of-type(3) {
+        transform: rotate(45deg);
+        position: absolute;
+        top: 6px;
+    }
+    #menu__toggle:checked ~ .burger > .line:nth-of-type(2) {
+        transform: rotate(135deg);
+        position: absolute;
+        top: 6px;
+    }
+    #menu__toggle:checked ~ .burger {
+        z-index: 200;
+    }
+    #menu__toggle:checked ~ .header__nav{
+        display: flex;
+        width: 100%;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+        text-align: center;
+    }
+
+    main {
+        padding: 0 10px 0 10px;
+    }
+
+    /*? Block - arcticle-presentation*/
+    .presentation_blue-text {
+        font-size: 12px;
+    }
+    .title {
+        width: calc(100% - 40px);
+        font-size: 24px;
+    }
+    .presentation__img {
+        margin-top: 15px;
+    }
+    .presentation__title-input {
+        width: calc(100% - 30px);
+        font-size: 24px;
+    }
+    .presentation__text-input {
+        width: 275px;
+        font-size: 12px;
+    }
+    .presentation__input_label {
+        font-size: 10px;
+    }
+    .presentation__input {
+        width: 291px;
+        height: 47px;
+        font-size: 14px;
+        padding: 0 85px 0 21px;
+    }
+    .presentation__input::placeholder {
+        font-size: 14px;
+    }
+    .presentation__input_btn {
+        width: 71px;
+        height: 39px;
+        font-size: 14px;
+        top: 32px;
+        right: 80px;
+    }
+
+    /*? Block - arcticle-team*/
+    .arcticle-team {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-photo {
+        margin-top: 36px;
+    }
+
+    /*? Block - footer*/
+    footer {
+        padding-left: 0;
+        min-height: 714px;
+        padding-top: 0;
+    }
+    .wrap-footer-content {
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .footer_nav {
+        width: 92px;
+        margin-top: 36px;
+        margin-left: 41px;
+    }
+    .footer_contacts {
+        margin-top: 64px;
+        margin-left: 41px;
+    }
+    .footer_input {
+        margin: 65px 0 0 0;
+        margin-left: 41px;
+    }
+    .footer_link {
+        margin-top: 154px;
+    }
+}
+
+@media (max-width: 377px) {
+    /*? Block - arcticle-presentation*/
+    .title {
+        width: 272px;
+        margin-top: 0;
+    }
+    .presentation__title-input {
+        width: 227px;
+        margin-top: 22px;
+    }
+    .presentation__text-input {
+        margin-top: 33px;
+    }
+    .wrap-presentation__input {
+        width: 291px;
+        margin-top: 31px;
+    }
+    .presentation__input {
+        margin-top: 0px;
+        padding: 0 85px 0 10px;
+    }
+    .presentation__input_btn {
+        top: 23px;
+        right: 5px;
+    }
+
+    /*? Block - arcticle-design*/
+    .design-card__small-text {
+        font-size: 12px;
+    }
+    .design-card__big-text {
+        font-size: 18px;
+    }
+    .arrow-see {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /*? Block - arcticle-feedback*/
+    .feedback-text {
+        font-size: 24px;
+        margin-bottom: 31px;
+    }
+}

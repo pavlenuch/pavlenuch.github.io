@@ -19,3 +19,4 @@
 ##### https://pavlenuch.github.io/devchallenges/recipe_page_master/index.html
 ##### https://pavlenuch.github.io/devchallenges/my_gallery_master/index.html
 ##### https://pavlenuch.github.io/devchallenges/checkout_page_master/index.html
+##### https://pavlenuch.github.io/devchallenges/edie_homepage_master/index.html
